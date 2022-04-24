@@ -32,3 +32,15 @@ INSERT INTO tb_section (title, description,position, img_uri, resource_id, prere
 INSERT INTO tb_enrollment (user_id, offer_id, enroll_moment,refound_moment, available, only_update) VALUES (1,1, TIMESTAMP WITH TIME ZONE '2022-05-01T20:50:07.12345Z', TIMESTAMP WITH TIME ZONE '2022-06-30T20:50:07.12345Z', true, false);
 INSERT INTO tb_enrollment (user_id, offer_id, enroll_moment,refound_moment, available, only_update) VALUES (2,1, TIMESTAMP WITH TIME ZONE '2022-05-01T20:50:07.12345Z', TIMESTAMP WITH TIME ZONE '2022-06-30T20:50:07.12345Z', true, false);
 INSERT INTO tb_enrollment (user_id, offer_id, enroll_moment,refound_moment, available, only_update) VALUES (3,1, TIMESTAMP WITH TIME ZONE '2022-05-01T20:50:07.12345Z', TIMESTAMP WITH TIME ZONE '2022-06-30T20:50:07.12345Z', true, false);
+
+INSERT INTO tb_lesson (title, position, section_id) VALUES ('LIÇÃO 1',1,1);
+INSERT INTO tb_lesson (title, position, section_id) VALUES ('LIÇÃO 2',1,1);
+INSERT INTO tb_lesson (title, position, section_id) VALUES ('LIÇÃO 3',1,1);
+
+INSERT INTO tb_content (id, text_content, video_uri) VALUES (1, 'CONTEUDO 1 DA LIÇÃO 1','https://youtu.be/1FQfFoT_Y94');
+INSERT INTO tb_content (id, text_content, video_uri) VALUES (2, 'CONTEUDO DA LIÇÃO 2','https://youtu.be/1FQfFoT_Y94');
+
+INSERT INTO tb_task (id, description, question_count, approval_count, weight, due_date) VALUES (3, 'Fazer site em html',10,5,10, TIMESTAMP WITH TIME ZONE '2022-05-01T20:50:07.12345Z');
+
+INSERT INTO tb_lessons_done (user_id, offer_id, lesson_id ) VALUES (1, 1,1);
+INSERT INTO tb_lessons_done (user_id, offer_id, lesson_id ) VALUES (1, 2,1);

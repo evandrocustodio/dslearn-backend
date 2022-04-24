@@ -1,7 +1,9 @@
 package com.devsuperior.dslearnbds.entities;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Objects;
 import java.util.Set;
 
@@ -15,6 +17,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -39,6 +42,13 @@ public abstract class Lesson implements Serializable {
 			@JoinColumn(name = "user_id"), @JoinColumn(name = "offer_id") })
 	private Set<Enrollment> enrollmentsDone = new HashSet<>();
 
+	
+	@OneToMany(mappedBy = "lesson")
+	private List<Deliver> delivers = new ArrayList<>();
+	
+	@OneToMany(mappedBy = "lesson")
+	private List<Topic> topics = new ArrayList<>();
+	
 	public Lesson() {
 	}
 
@@ -89,6 +99,10 @@ public abstract class Lesson implements Serializable {
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
+	}
+	
+	public List<Deliver> getDelivers() {
+		return delivers;
 	}
 
 	@Override

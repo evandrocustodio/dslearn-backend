@@ -45,9 +45,9 @@ INSERT INTO tb_task (id, description, question_count, approval_count, weight, du
 INSERT INTO tb_lessons_done (user_id, offer_id, lesson_id ) VALUES (1, 1, 1);
 INSERT INTO tb_lessons_done (user_id, offer_id, lesson_id ) VALUES (1, 2, 1);
 
-INSERT INTO tb_notification (user_id, text, moment, read, route) VALUES (1, 'Primeiro Feedback', TIMESTAMP WITH TIME ZONE '2022-05-01T20:50:07.12345Z', false,'/offers' );
-INSERT INTO tb_notification (user_id, text, moment, read, route) VALUES (2, 'Primeiro Feedback', TIMESTAMP WITH TIME ZONE '2022-05-01T20:50:07.12345Z', false,'/offers' );
-INSERT INTO tb_notification (user_id, text, moment, read, route) VALUES (3, 'Primeiro Feedback', TIMESTAMP WITH TIME ZONE '2022-05-01T20:50:07.12345Z', false,'/offers' );
+INSERT INTO tb_notification (user_id, text, moment, read, route) VALUES (1, 'Primeiro Feedback Alex', TIMESTAMP WITH TIME ZONE '2022-05-01T20:50:07.12345Z', false,'/offers' );
+INSERT INTO tb_notification (user_id, text, moment, read, route) VALUES (2, 'Primeiro Feedback Bob', TIMESTAMP WITH TIME ZONE '2022-05-01T20:50:07.12345Z', false,'/offers' );
+INSERT INTO tb_notification (user_id, text, moment, read, route) VALUES (3, 'Primeiro Feedback Maria', TIMESTAMP WITH TIME ZONE '2022-05-01T20:50:07.12345Z', false,'/offers' );
 
 
 INSERT INTO tb_deliver (user_id, offer_id, lesson_id, uri, moment, status, feedback, correct_count) VALUES (1, 1, 1, 'http://github.com.br', TIMESTAMP WITH TIME ZONE '2022-05-01T20:50:07.12345Z', 0, 'Ok', 0);

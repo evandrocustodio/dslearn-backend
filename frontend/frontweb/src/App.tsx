@@ -1,13 +1,14 @@
+import NavBar from 'components/Navbar';
+import './assets/styles/custom.scss';
 import './App.css';
+import Home from 'pages/Home/indexe';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-       <h1>EvandroCg</h1>
-      </header>
+      <Home />
     </div>
   );
-}
+};
 
 export default App;

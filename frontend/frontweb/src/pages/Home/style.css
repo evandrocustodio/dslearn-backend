@@ -7,8 +7,6 @@
 .home-card {
   display: flex;
   flex-direction: column-reverse;
-  background: #ffffff;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
 }
 
@@ -55,10 +53,6 @@
   .home-content-container p {
     width: 506px;
     margin-bottom: 20px;
-  }
-
-  .home-content-container button {
-    width: 506px;
   }
 
   .home-image-container svg {
@@ -131,8 +125,6 @@
     width: 100%;
   }
 }
-
-
 
 /* X-LARGE */
 @media (min-width: 1400px) {  
